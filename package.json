@@ -1,0 +1,22 @@
+{
+  "name": "useless-files-webpack-plugin",
+  "version": "1.0.0",
+  "description": "webpack deal useless files plugin",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Viyozc/useless-files-webpack-plugin.git"
+  },
+  "author": "viyozc",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Viyozc/useless-files-webpack-plugin/issues"
+  },
+  "homepage": "https://github.com/Viyozc/useless-files-webpack-plugin#readme",
+  "dependencies": {
+    "shelljs": "^0.8.1"
+  }
+}
