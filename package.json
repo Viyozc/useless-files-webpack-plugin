@@ -1,6 +1,6 @@
 {
   "name": "useless-files-webpack-plugin",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "webpack deal useless files plugin",
   "main": "index.js",
   "scripts": {
