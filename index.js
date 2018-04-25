@@ -68,7 +68,7 @@ class CleanUnusedFilesPlugin {
       const allFiles = await this.getAllFiles(pattern)
       let unUsed = allFiles
         .filter(item => !~allChunks.indexOf(item))
-      if (exclude) {
+      if (exclude && typeof exclude === 'string') {
         unUsed = this.dealExclude(exclude, unUsed)
       }
       if (typeof output === 'string') {
