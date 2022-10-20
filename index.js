@@ -87,6 +87,19 @@ class CleanUnusedFilesPlugin {
       throw (err)
     }
   }
+  apply (compiler) {
+    let _this = this
+    if(compiler.plugin){//webpack4
+      compiler.plugin('after-emit', function (compilation, done) {
+        _this.findUnusedFiles(compilation, _this.opts)
+        done()
+      })
+      return
+    }
+    compiler.hooks.afterEmit.tap('CleanUnusedFilesPlugin',(compilation)=>{//webpack5
+      _this.findUnusedFiles(compilation, _this.opts)
+    })
+  }
 }
 
 module.exports = CleanUnusedFilesPlugin
